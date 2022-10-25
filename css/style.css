@@ -1,8 +1,38 @@
 body {
-  background: gray;
-}
+  background-color: blanchedalmond;
+  text-align: center;
+  line-height: 1.5;
 
+}
 h1 {
   font-size: 5vw;
-  
+  text-transform: uppercase;
+  color: tomato;
+}
+p {
+  color: darksalmon;
+  line-height: 2;
+}
+footer{
+  color: red;
+}
+
+p{
+  position: relative;
+  background-color: antiquewhite;
+  width: 30%;
+  font-size: larger;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  margin-left: 5em;
+  margin-right: 5em;
+  left: 29%;
+}
+header{
+    position: sticky;
+    top: 0;
 }
