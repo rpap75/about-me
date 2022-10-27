@@ -11,16 +11,9 @@ h1 {
   color: tomato;
 }
 
-p {
-  color: darksalmon;
-  line-height: 3;
-}
-
-footer{
-  color: red;
-}
-
 p{
+  color: darksalmon;
+  line-height: 2;
   position: relative;
   background-color: antiquewhite;
   font-size: larger;
@@ -34,15 +27,19 @@ p{
   margin-right: 10em;
 }
 
+footer{
+  color: red;
+}
+
 header{
     position: sticky;
     top: 0;
 }
 
 ol {
-list-style: decimal;
-list-style-position: inside;
-color: darksalmon;
+  list-style: decimal;
+  list-style-position: inside;
+  color: darksalmon;
 }
 
 .movietitle {
@@ -53,20 +50,20 @@ ul {
   list-style: decimal;
   list-style-position: inside;
   color: darksalmon;
-  }
-  
-  .eduwrktitle {
-    color: tomato;
-  }
+}
 
-  .bothlist {
+.eduwrktitle {
+    color: tomato;
+}
+
+.bothlist {
   line-height: 2.5;
   position: relative;
-  }
+}
 
-  .movie {
-    background-color: antiquewhite;
-    border-left: 2px solid white;
+.movie {
+  background-color: antiquewhite;
+  border-left: 2px solid white;
   border-right: 2px solid white;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
@@ -74,11 +71,11 @@ ul {
   margin-bottom: 5em;
   margin-left: 10em;
   margin-right: 10em;
-  }
+}
 
-  .eduwrk {
-    background-color: antiquewhite;
-    border-left: 2px solid white;
+.eduwrk {
+  background-color: antiquewhite;
+  border-left: 2px solid white;
   border-right: 2px solid white;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
@@ -86,4 +83,4 @@ ul {
   margin-bottom: 5em;
   margin-left: 10em;
   margin-right: 10em;
-  }
+}

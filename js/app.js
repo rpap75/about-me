@@ -48,19 +48,25 @@ if (Q5 === 'YES' || Q5 === 'Y') {
   alert('Incorrect! I am always hungry!');
 }
 
-let myNum = Math.floor(Math.random() * 15);
+let myNum = Math.floor(Math.random() * 14) + 1;
 let guesses = 4;
 
 while (guesses > 0) {
   let guessNum = prompt('Im thinking of a number between 1 and 15, what number am I thinkning of?');
-  guesses--;
   if (guessNum > myNum) {
     alert('Too High');
+    console.log('Too High');
   } else if (guessNum < myNum) {
     alert('Too Low');
+    console.log('Too Low');
   } else if (parseInt(guessNum) === myNum) {
     alert('Correct');
+    console.log('Correct');
     break;
+  }
+  guesses--;
+  if (guesses === 0) {
+    alert(`the correct answer was ${myNum}`);
   }
 }
 
@@ -69,16 +75,15 @@ let secGuesses = 6
 
 
 for (let i = 0; i < 6; i++) {
-  let guessBand = prompt('What are one of the bands I have listened to recently?');
-  if (guessBand === 'queen' || guessBand === 'panic at the disco') {
-    alert('correct');
+  let guessBand = prompt('What are one of the bands I have listened to recently?').toLowerCase();
+  if (guessBand === 'queen' || guessBand === 'panic at the disco' || guessBand === 'george ezra' || guessBand === 'explosions in the sky' || guessBand === 'green day') {
+    alert('Correct');
+    console.log('Correct');
     break;
+  } else {
+    alert('Incorrect');
+    console.log('Incorrect');
   }
-  else {
-    alert('incorrect');
-  }
-}
-
-alert('Here were the correct answers, Panic At The Disco, Queen, George Ezra, Explosions In The Sky, and Green Day');
+} alert('Here were the correct answers, Panic At The Disco, Queen, George Ezra, Explosions In The Sky, and Green Day');
 
 alert(`Thanks for stopping by and answering some questions! Have a great rest of your day ${username}!`);
