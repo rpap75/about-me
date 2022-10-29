@@ -75,13 +75,13 @@ function guessNum() {
     let guessNum = prompt('Im thinking of a number between 1 and 15, what number am I thinkning of?');
     if (guessNum > myNum) {
       alert(`Too High, ${guesses - 1} guesses remaining!`);
-      console.log('Too High');
+      // console.log('Too High');
     } else if (guessNum < myNum) {
       alert(`Too Low, ${guesses - 1} guesses remaining!`);
-      console.log('Too Low');
+      // console.log('Too Low');
     } else if (parseInt(guessNum) === myNum) {
       alert('Correct');
-      console.log('Correct');
+      // console.log('Correct');
       score++;
       break;
     }
@@ -105,12 +105,12 @@ function music() {
     }
     if (wrongGuess) {
       alert(`Correct! ${guessBand} is a band I listened to.`);
-      console.log('Correct');
+      // console.log('Correct');
       score++;
       break;
     } else {
       alert(`Incorrect, ${guessBand} is not a band I listend to recently. ${guesses - 1} guesses remaining!`);
-      console.log('Incorrect');
+      // console.log('Incorrect');
     }
     guesses--;
   }
