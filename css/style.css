@@ -9,6 +9,7 @@ body {
   background-image: url("../img/az.jpg");
   background-size: cover;
   backdrop-filter: blur(3px);
+  
 }
 
 h1, h2 {
@@ -35,7 +36,6 @@ header{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 h2 {
   background: linear-gradient(to right, rgb(255, 206, 71) 0%, rgb(255, 0, 0) 100%);

@@ -115,8 +115,7 @@ function music() {
     guesses--;
   }
   alert('Here were the correct answers, Panic At The Disco, Queen, George Ezra, Explosions In The Sky, and Green Day');
-}
-music();
+} music();
 
 alert(`Your final score was ${score}/7`);
 
