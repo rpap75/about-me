@@ -1,86 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@500&display=swap');
+
 body {
   background-color: blanchedalmond;
   text-align: center;
-  line-height: 1.5;
-
+  line-height: 1;
+  font-size: 1.5vw;
+  -webkit-text-stroke:.3px red;
+  background-image: url("../img/az.jpg");
+  background-size: cover;
+  backdrop-filter: blur(3px);
 }
 
-h1 {
-  font-size: 5vw;
+h1, h2 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+header{
+  position: sticky;
+  top: 0;
+}
+
+.intro {
+  font-size: 7vw;
   text-transform: uppercase;
-  color: tomato;
+  position: relative;
+  display: inline-block;
+  background-color: rgba(255, 235, 205, 0.369);
+  padding: .2em;
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background: linear-gradient(to right, rgb(255, 206, 71) 0%, rgb(255, 0, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-p{
-  color: darksalmon;
-  line-height: 2;
+
+h2 {
+  background: linear-gradient(to right, rgb(255, 206, 71) 0%, rgb(255, 0, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2vw;
+}
+
+.biobox{
   position: relative;
-  background-color: antiquewhite;
+  background-color: rgba(214, 225, 250, 0.75);
   font-size: larger;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 10em;
   margin-right: 10em;
+  transition: all .2s ease-in-out;
 }
+.biobox:hover { transform: scale(1.1); }
 
-footer{
-  color: red;
-}
-
-header{
-    position: sticky;
-    top: 0;
-}
-
-ol {
-  list-style: decimal;
-  list-style-position: inside;
+.biotext {
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
   color: darksalmon;
-}
-
-.movietitle {
-  color: tomato;
-}
-
-ul {
-  list-style: decimal;
-  list-style-position: inside;
-  color: darksalmon;
-}
-
-.eduwrktitle {
-    color: tomato;
+  line-height: 2;
+  padding: 1em;
 }
 
 .bothlist {
   line-height: 2.5;
   position: relative;
+ 
 }
 
-.movie {
-  background-color: antiquewhite;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+.moviebox {
+  background-color: rgba(214, 225, 250, 0.75);
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
   margin-top: 5em;
   margin-bottom: 5em;
   margin-left: 10em;
   margin-right: 10em;
+  transition: all .2s ease-in-out;
+}
+.moviebox:hover { transform: scale(1.1); }
+
+.movielist {
+  font-family: 'Raleway', sans-serif;
+  list-style: decimal;
+  list-style-position: inside;
+  color: darksalmon;
+  display: inline-block; 
+	text-align: left; 
+  padding: 1em;
 }
 
-.eduwrk {
-  background-color: antiquewhite;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+.eduwrkbox {
+  background-color:  rgba(214, 225, 250, 0.75);
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
   margin-top: 5em;
   margin-bottom: 5em;
   margin-left: 10em;
   margin-right: 10em;
+  transition: all .2s ease-in-out;
+}
+.eduwrkbox:hover { transform: scale(1.1); }
+
+.eduwrklist {
+  font-family: 'Raleway', sans-serif;
+  list-style: disc;
+  list-style-position: inside;
+  color: darksalmon;
+  display: inline-block; 
+	text-align: left; 
+  padding: 1em;
+}
+
+a{
+  color: tomato;
+}
+
+footer{
+  text-align: left;
+  color: tomato;
+  line-height: 1.5;
+  -webkit-text-stroke:.2px antiquewhite
 }

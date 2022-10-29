@@ -1,5 +1,9 @@
 'use strict';
+
+// ***** Global-variables
+
 let score = 0;
+
 let username = prompt('Hello, What is your name?');
 alert(`Thanks for stopping by my site, ${username}! If you are up for the challenge here are some questions!`);
 
@@ -70,10 +74,10 @@ function guessNum() {
   while (guesses > 0) {
     let guessNum = prompt('Im thinking of a number between 1 and 15, what number am I thinkning of?');
     if (guessNum > myNum) {
-      alert('Too High');
+      alert(`Too High, ${guesses - 1} guesses remaining!`);
       console.log('Too High');
     } else if (guessNum < myNum) {
-      alert('Too Low');
+      alert(`Too Low, ${guesses - 1} guesses remaining!`);
       console.log('Too Low');
     } else if (parseInt(guessNum) === myNum) {
       alert('Correct');
@@ -90,31 +94,30 @@ function guessNum() {
 
 function music() {
   let answers = ['panic at the disco', 'queen', 'george ezra', 'explosions in the sky', 'green day'];
-  let wrongGuess = true;
-  let secGuesses = 6;
-  for (let i = 0; i < 6; i++) {
+  let wrongGuess = false;
+  let guesses = 6;
+  while (guesses > 0) {
     let guessBand = prompt('What are one of the bands I have listened to recently?').toLowerCase();
-    for (let j = 0; j < answers.length; j++) {
-      if (guessBand === answers[j]) {
-        wrongGuess = false;
-        break;
+    for (let i = 0; i < answers.length; i++) {
+      if (answers[i] === guessBand) {
+        wrongGuess = true;
       }
     }
-    if (wrongGuess === false) {
-      alert('Correct');
+    if (wrongGuess) {
+      alert(`Correct! ${guessBand} is a band I listened to.`);
       console.log('Correct');
       score++;
       break;
     } else {
-      alert('Incorrect');
+      alert(`Incorrect, ${guessBand} is not a band I listend to recently. ${guesses - 1} guesses remaining!`);
       console.log('Incorrect');
     }
+    guesses--;
   }
+  alert('Here were the correct answers, Panic At The Disco, Queen, George Ezra, Explosions In The Sky, and Green Day');
 }
 music();
 
-alert('Here were the correct answers, Panic At The Disco, Queen, George Ezra, Explosions In The Sky, and Green Day');
+alert(`Your final score was ${score}/7`);
 
 alert(`Thanks for stopping by and answering some questions! Have a great rest of your day ${username}!`);
-
-alert(`Score: ${score}/7`);
